@@ -16,7 +16,11 @@ use App\Http\Controllers\HomeController;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('landing');
+});
+
+Route::get('home',function(){
+    return view('landing');
 });
 route::get('/redirects', [HomeController::class, "index"]);
 
