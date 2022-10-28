@@ -152,21 +152,54 @@
         <script src="https://unpkg.com/flowbite@1.4.0/dist/flowbite.js"></script>
     </div>
 
+<!-- component -->
+<div class="py-16 " style="background-color:#99afde">  
+    <div class="text-center pb-12">
+          
+        <h1 class="font-bold text-3xl md:text-4xl lg:text-5xl font-heading text-blue-900">
+           Our services
+        </h1>
+    </div>
+    <div class="container m-auto px-6 text-gray-500 md:px-12 xl:px-0">
+        <div class="mx-auto grid gap-6 md:w-3/4 lg:w-full lg:grid-cols-3">
+            <div class="bg-white rounded-2xl shadow-xl px-8 py-12 sm:px-12 lg:px-8">
+                <div class="mb-12 space-y-4">
+                    <h3 class="text-2xl font-semibold text-purple-900">Dentistry</h3>
+                    <p class="mb-6">Obcaecati, quam? Eligendi, nulla numquam natus laborum porro at cum, consectetur ullam tempora ipsa iste officia sed officiis! Incidunt ea animi officiis.</p>
+                    <a href="#" class="block font-medium text-purple-600">Know more</a>
+                </div>
+                </div>
+            <div class="bg-white rounded-2xl shadow-xl px-8 py-12 sm:px-12 lg:px-8">
+                <div class="mb-12 space-y-4">
+                    <h3 class="text-2xl font-semibold text-purple-900">Dermatology</h3>
+                    <p class="mb-6">Obcaecati, quam? Eligendi, nulla numquam natus laborum porro at cum, consectetur ullam tempora ipsa iste officia sed officiis! Incidunt ea animi officiis.</p>
+                    <a href="#" class="block font-medium text-purple-600">Know more</a>
+                </div>
+               </div>
+            <div class="bg-white rounded-2xl shadow-xl px-8 py-12 sm:px-12 lg:px-8">
+                <div class="mb-12 space-y-4">
+                    <h3 class="text-2xl font-semibold text-purple-900">Ophthalmology</h3>
+                    <p class="mb-6">Obcaecati, quam? Eligendi, nulla numquam natus laborum porro at cum, consectetur ullam tempora ipsa iste officia sed officiis! Incidunt ea animi officiis.</p>
+                    <a href="#" class="block font-medium text-purple-600">Know more</a>
+                </div>
+                   </div>
+        </div>
+    </div>
+</div>
+
 <!-- our doctors  -->
 <br/>
 <br/>
-<div class="w-full bg-blue-800">
+<div class="w-full " >
     <section class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-4 py-12">
         <div class="text-center pb-12">
-            <h2 class="text-base font-bold text-dark-600">
-                We have the best equipment in the market
-            </h2>
-            <h1 class="font-bold text-3xl md:text-4xl lg:text-5xl font-heading text-white">
+          
+            <h1 class="font-bold text-3xl md:text-4xl lg:text-5xl font-heading text-blue-900">
                 Check our awesome Doctors
             </h1>
         </div>
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <div class="w-full bg-blue-900 rounded-lg sahdow-lg p-12 flex flex-col justify-center items-center">
+            <div class="w-full  rounded-lg sahdow-lg p-12 flex flex-col justify-center items-center" style="background-color:#99afde">
                 <div class="mb-8">
                     <img class="object-center object-cover rounded-full h-36 w-36" src="doctor.jpg" alt="doctor ">
                 </div>
@@ -176,7 +209,7 @@
                 </div>
             </div>
 
-            <div class="w-full bg-blue-900 rounded-lg sahdow-lg p-12 flex flex-col justify-center items-center">
+            <div class="w-full  rounded-lg sahdow-lg p-12 flex flex-col justify-center items-center" style="background-color:#99afde">
                 <div class="mb-8">
                     <img class="object-center object-cover rounded-full h-36 w-36" src="doctor.jpg" alt="doctor ">
                 </div>
@@ -186,7 +219,7 @@
                 </div>
             </div>
 
-            <div class="w-full bg-blue-900 rounded-lg sahdow-lg p-12 flex flex-col justify-center items-center">
+            <div class="w-full  rounded-lg sahdow-lg p-12 flex flex-col justify-center items-center" style="background-color:#99afde">
                 <div class="mb-8">
                     <img class="object-center object-cover rounded-full h-36 w-36" src="doctor.jpg" alt="doctor ">
                 </div>
@@ -208,32 +241,31 @@
 
 
 
-<footer class="p-4 bg-white rounded-md shadow md:px-6 md:py-8 " style="background-color: #1A237E">
+<footer class="p-2 rounded-md shadow md:px-6 md:py-12 " style="background-color: #1A237E">
     <div class="sm:flex sm:items-center sm:justify-between">
-        <a href="/" target="_blank" class="flex items-center mb-4 sm:mb-0">
+        <a href="/" target="_blank" class="flex items-center mb-2 sm:mb-0">
             <img src="logo.svg" class="mr-4 " alt=" Logo" style="height: 80px" />
 
         </a>
-        <ul class="flex flex-wrap items-center mb-6 sm:mb-0">
+        <ul class="flex flex-wrap items-center mb-3 sm:mb-0">
             <li>
-                <a href="#" class="mr-4 text-sm text-gray-500 hover:underline md:mr-6 dark:text-gray-400">Sign in
+                <a href="#" class="mr-4 text-sm text-gray-500 hover:underline md:mr-3 dark:text-gray-400">Sign in
 Request Status</a>
             </li>
             <li>
-                <a href="#" class="mr-4 text-sm text-gray-500 hover:underline md:mr-6 dark:text-gray-400">Help</a>
+                <a href="#" class="mr-4 text-sm text-gray-500 hover:underline md:mr-3 dark:text-gray-400">Help</a>
             </li>
             <li>
                 <a href="#"
-                    class="mr-4 text-sm text-gray-500 hover:underline md:mr-6 dark:text-gray-400">FAQ</a>
+                    class="mr-4 text-sm text-gray-500 hover:underline md:mr-3 dark:text-gray-400">FAQ</a>
             </li>
             <li>
                 <a href="#" class="text-sm text-gray-500 hover:underline dark:text-gray-400">Contact Support </a>
             </li>
         </ul>
     </div>
-    <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
-    <span class="block text-sm text-gray-500 sm:text-center " style="background-color: #1A237E">© 2022 <a href="/" target="_blank" class="hover:underline">IntuitiveHealth™</a>. All Rights Reserved.
-</span>
+    <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 sm:my-8" />
+   
 </footer>
 
 
@@ -245,7 +277,6 @@ document.addEventListener('DOMContentLoaded', function() {
     // open
     const burger = document.querySelectorAll('.navbar-burger');
     const menu = document.querySelectorAll('.navbar-menu');
-
     if (burger.length && menu.length) {
         for (var i = 0; i < burger.length; i++) {
             burger[i].addEventListener('click', function() {
@@ -255,11 +286,9 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         }
     }
-
     // close
     const close = document.querySelectorAll('.navbar-close');
     const backdrop = document.querySelectorAll('.navbar-backdrop');
-
     if (close.length) {
         for (var i = 0; i < close.length; i++) {
             close[i].addEventListener('click', function() {
@@ -269,7 +298,6 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         }
     }
-
     if (backdrop.length) {
         for (var i = 0; i < backdrop.length; i++) {
             backdrop[i].addEventListener('click', function() {
