@@ -14,9 +14,13 @@ class HomeController extends Controller
         if($role=='1'){
             return view('office_assistant');
         }
-        if($role=='2'){
+        elseif($role=='2'){
             return view('doctor');
         }
+        elseif($role =='0'){
+            return view('admin');
+        }
+
         else{
             return view ('dashboard');
         }
