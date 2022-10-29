@@ -18,6 +18,14 @@ npm install jetstream
 ```
 php artisan migrate
 ```
+### How to fix 500 server error 
+```
+composer install 
+mv .env.example .env 
+php artisan cache:clear 
+composer dump-autoload 
+php artisan key:generate
+```
 
 
 
