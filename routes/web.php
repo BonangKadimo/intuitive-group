@@ -19,21 +19,10 @@ Route::get('/', function () {
     return view('landing');
 });
 
-//Route::get('dash', function () {
-//    return view('dashcompo');
-//});
-
 Route::get('home',function(){
     return view('landing');
 });
-
-Route::get('/admin', function(){
-    return view('admin');
-});
-Route::get('/redirects', [HomeController::class, "index"]);
-
-
-
+route::get('/redirects', [HomeController::class, "index"]);
 
 Route::middleware([
     'auth:sanctum',
