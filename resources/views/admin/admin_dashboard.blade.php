@@ -150,17 +150,26 @@
         <div class="min-h-screen flex flex-col flex-auto flex-shrink-0 antialiased bg-white text-black dark:text-white"   style="background-color:#072870">
 
           <!-- Header -->
-          <div class="fixed w-full flex items-center justify-between h-14 text-white z-10" style="background-color: #000435">
-            <div class="flex items-center justify-start md:justify-center pl-3 w-14 md:w-64 h-14 border-none"  >  <!-- user div  --->
-              <img class="w-7 h-7 md:w-10 md:h-10 mr-2 rounded-md overflow-hidden" src="https://therminic2018.eu/wp-content/uploads/2018/07/dummy-avatar.jpg" />
-              <span class="hidden md:block">ADMIN</span>
+          
+          <div class="fixed w-full flex items-center justify-around h-14 text-white z-10" style="background-color: #000435">
+            <div class="ml-10">
+              <a href="/">
+                <img class ="h-12" src="logo.svg" alt="Our Logo" >
+              </a>
             </div>
-            <div class="flex justify-between items-center h-14  header-right" > <!-- heading/search   div  -->
-              <div class="bg-white rounded flex items-center w-full max-w-xl mr-4 p-2 shadow-sm border border-gray-200">
-                <button class="outline-none focus:outline-none">
-                  <svg class="w-5 text-gray-600 h-5 cursor-pointer" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" stroke="currentColor" viewBox="0 0 24 24"><path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
-                </button>
-                <input type="search" name="" id="" placeholder="Search" class="w-full pl-3 text-sm text-black outline-none focus:outline-none bg-transparent" />
+            <div class="flex justify-between items-center h-14  header-right" > 
+              <!-- heading/search   div  -->
+              <div class="flex justify-between ml-12">
+                <div class="mb-3 xl:w-96">
+                  <div class="input-group mt-6 flex items-stretch w-full mb-4">
+                    <input type="search" class="form-control relative flex-auto min-w-0 block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" placeholder="Search" aria-label="Search" aria-describedby="button-addon2">
+                    <button class="btn inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700  focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out flex items-center" type="button" id="button-addon2">
+                      <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="w-4" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"></path>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
               </div>
               <ul class="flex items-center">
                 <li>
@@ -208,23 +217,21 @@
                 <li>
                   <div class="block w-px h-6 mx-3 bg-gray-400 dark:bg-gray-700"></div>
                 </li>
-                <li>
-                 
-                    <a href="{{route('login')}}" class="flex items-center mr-4 hover:text-blue-100">
-                      <span class="inline-flex mr-1">
-                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1"></path></svg>
-                      </span>
-                      Logout
-                    </a>
+                <div class = "flex justify-end">
+                  <x-app-layout>
                 
-                </li>
+                  </x-app-layout>
+                </div>
+                
               </ul>
             </div>
           </div>
           <!-- ./Header -->
 
           <!-- Sidebar -->
+          
           <div class="fixed flex flex-col top-14 left-0 w-14 hover:w-64 md:w-64 h-full text-white transition-all duration-300 border-none z-10 sidebar" style="background-color: #000435"><!- side bar color -->
+            
             <div class="overflow-y-auto overflow-x-hidden flex flex-col justify-between flex-grow">
               <ul class="flex flex-col py-4 space-y-1">
                 <li class="px-5 hidden md:block">
@@ -299,7 +306,8 @@
                   </a>
                 </li>
               </ul>
-              <p class="mb-14 px-5 py-3 hidden md:block text-center text-xs">Copyright @2021</p>
+              <p class="mb-14 px-3 py-3 hidden md:block text-center text-xs">Copyright @2021</p>
+              
             </div>
           </div>
           <!-- ./Sidebar -->
