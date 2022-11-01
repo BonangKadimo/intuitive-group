@@ -16,14 +16,11 @@ use App\Http\Controllers\DoctorController;
 |
 */
 
-Route::get('/', function () {
-    return view('landing');
-});
 
-Route::get('home',function(){
-    return view('landing');
-});
-route::get('/redirects', [HomeController::class, "index"]);
+
+Route::get('/', [HomeController::class, 'index']);
+
+Route::get('/home', [HomeController::class, 'redirect']);
 
 Route::middleware([
     'auth:sanctum',
