@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\DoctorController;
 
 /*
 |--------------------------------------------------------------------------
@@ -33,3 +34,13 @@ Route::middleware([
         return view('dashboard');
     })->name('dashboard');
 });
+
+//i am trying things out
+Route::get('/doctorappointment',[DoctorController::class,'doctorappointment'])->name('home.doctorappointment');
+Route::get('/doctorschedule',[DoctorController::class,'doctorschedule'])->name('home.doctorschedule'); 
+Route::get('/doctorpatientmanagement',[DoctorController::class,'doctorpatientmanagement'])->name('home.doctorpatientmanagement'); 
+Route::get('/doctorpatienthistory',[DoctorController::class,'doctorpatienthistory'])->name('home.doctorpatienthistory'); 
+Route::get('/doctorpatientprescription',[DoctorController::class,'doctorpatientprescription'])->name('home.doctorpatientprescription');
+Route::get('/dischargepatients',[DoctorController::class,'dischargepatients'])->name('home.dischargepatients');
+Route::get('/doctor',[DoctorController::class,'doctor'])->name('home.doctor');
+
