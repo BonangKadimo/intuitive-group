@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\DoctorController;
+use App\Http\Controllers\PatientController;
 
 /*
 |--------------------------------------------------------------------------
@@ -40,4 +41,11 @@ Route::get('/doctorpatienthistory',[DoctorController::class,'doctorpatienthistor
 Route::get('/doctorpatientprescription',[DoctorController::class,'doctorpatientprescription'])->name('home.doctorpatientprescription');
 Route::get('/dischargepatients',[DoctorController::class,'dischargepatients'])->name('home.dischargepatients');
 Route::get('/doctor',[DoctorController::class,'doctor'])->name('home.doctor');
+
+Route::get('/patientappointment',[PatientController::class,'patientappointment'])->name('home.patientappointment');
+Route::get('/patientdoctor',[PatientController::class,'patientdoctor'])->name('home.patientdoctor'); 
+Route::get('/patientPrescription',[PatientController::class,'patientPrescription'])->name('home.patientPrescription'); 
+Route::get('/patientpayment',[PatientController::class,'patientpayment'])->name('home.patientpayment'); 
+Route::get('/patient',[PatientController::class,'patient'])->name('home.patient');
+
 
