@@ -1,4 +1,4 @@
-<nav x-data="{ open: false }" class="bd-transparent border-b border-gray-100">
+<nav x-data="{ open: false }" class=" ">
     <!-- Primary Navigation Menu -->
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-red-300">
         <div class="flex justify-between h-13  ">
@@ -71,7 +71,7 @@
                 @endif
 
                 <!-- Settings Dropdown -->
-                <div class="ml-8 h-10 relative ">
+                <div class="ml-3 h-10 relative ">
                     <x-jet-dropdown align="right" width="48">
                         <x-slot name="trigger">
                             @if (Laravel\Jetstream\Jetstream::managesProfilePhotos())
