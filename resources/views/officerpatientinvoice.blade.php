@@ -208,9 +208,14 @@
                 <li>
                   <div class="block w-px h-6 mx-3 bg-gray-400 dark:bg-gray-700"></div>
                 </li>
-                <x-app-layout>
-                
-                </x-app-layout>
+                <li>
+                  <a href="#" class="flex items-center mr-4 hover:text-blue-100">
+                    <span class="inline-flex mr-1">
+                      <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1"></path></svg>
+                    </span>
+                    Logout
+                  </a>
+                </li>
               </ul>
             </div>
           </div>
@@ -304,7 +309,6 @@
           </div>
           <!-- ./Sidebar -->
 
-
           <div class="h-full ml-14 mt-14 mb-10 md:ml-64">
 
 
@@ -317,40 +321,115 @@
             </div>
 
 
-<div class="py-8 ">  
-  
-    <div class="text-center pb-12">
-          
-        <h1 class="font-bold text-3xl md:text-4xl lg:text-5xl font-heading text-white">
-           Welcome to Dashboard!
-        </h1>
-    </div>
-    <div class="container m-auto px-6 text-gray-500 md:px-12 xl:px-0" >
-        <div class="mx-auto grid gap-6 md:w-3/4 lg:w-full lg:grid-cols-3">
-            <div class="bg-white rounded-2xl shadow-xl px-8 py-12 sm:px-12 lg:px-8">
-                <div class="mb-12 space-y-4">
-                    <h3 class="text-2xl font-semibold text-purple-900">Appointments Ahead</h3>
-                    <p class="mb-6">Obcaecati, quam? Eligendi, nulla numquam natus laborum porro at cum, consectetur ullam tempora ipsa iste officia sed officiis! Incidunt ea animi officiis.</p>
-                    <a href="#" class="block font-medium text-purple-600">Know more</a>
-                </div>
-                </div>
-            <div class="bg-white rounded-2xl shadow-xl px-8 py-12 sm:px-12 lg:px-8">
-                <div class="mb-12 space-y-4">
-                    <h3 class="text-2xl font-semibold text-purple-900">Doctor's Note</h3>
-                    <p class="mb-6">Obcaecati, quam? Eligendi, nulla numquam natus laborum porro at cum, consectetur ullam tempora ipsa iste officia sed officiis! Incidunt ea animi officiis.</p>
-                    <a href="#" class="block font-medium text-purple-600">Know more</a>
-                </div>
-               </div>
-            <div class="bg-white rounded-2xl shadow-xl px-8 py-12 sm:px-12 lg:px-8">
-                <div class="mb-12 space-y-4">
-                    <h3 class="text-2xl font-semibold text-purple-900">Health Tips</h3>
-                    <p class="mb-6">Obcaecati, quam? Eligendi, nulla numquam natus laborum porro at cum, consectetur ullam tempora ipsa iste officia sed officiis! Incidunt ea animi officiis.</p>
-                    <a href="#" class="block font-medium text-purple-600">Know more</a>
-                </div>
-                   </div>
-        </div>
+<!---The section fo invoices---->
+<div class="row">
+    <div class="col-md-12">
+<div class="card">
+<div class="card-body">
+<div class="container-fluid d-flex justify-content-between">
+  <div class="col-lg-3 ps-0">
+    <a href="#" class="noble-ui-logo d-block mt-3">INTUITIVE <span>E-HEALTHCARE</span></a>                 
+    <p class="mt-1 mb-1"><b>INTUITIVE  Themes</b></p>
+    <p>108,<br> Sir Simon  St,<br>Gaborone,Plot345</p>
+    <h5 class="mt-5 mb-2 text-muted">Invoice to :</h5>
+    <p>Joseph Musk,<br> 102, 102  Malamasweu St,<br> Gaborone,Plot 456.</p>
+  </div>
+  <div class="col-lg-3 pe-0">
+    <h4 class="fw-bolder text-uppercase text-end mt-4 mb-2">INVOICE</h4>
+    <h6 class="text-end mb-5 pb-4"># INV-002308</h6>
+    <p class="text-end mb-1">Balance Due</p>
+    <h4 class="text-end fw-normal">BWP 403.00</h4>
+    <h6 class="mb-0 mt-3 text-end fw-normal mb-2"><span class="text-muted">Invoice Date :</span> 25rd Oct 2022</h6>
+    <h6 class="text-end fw-normal"><span class="text-muted">Due Date :</span> 12th Nov 2022</h6>
+  </div>
+</div>
+<div class="container-fluid mt-5 d-flex justify-content-center w-100">
+  <div class="table-responsive w-100">
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+              <th>#</th>
+              <th>Description</th>
+              <th class="text-end">Quantity</th>
+              <th class="text-end">Unit cost</th>
+              <th class="text-end">Total</th>
+            </tr>
+        </thead>
+        <tbody>
+          <tr class="text-end">
+            <td class="text-start">1</td>
+            <td class="text-start">Paracetamol</td>
+            <td>10</td>
+            <td>BWP 20</td>
+            <td>BWP 200</td>
+          </tr>
+          <tr class="text-end">
+            <td class="text-start">2</td>
+            <td class="text-start">Mosukujane devil's claw</td>
+            <td>02</td>
+            <td>BWP150</td>
+            <td>BWP300</td>
+          </tr>
+          <tr class="text-end">
+            <td class="text-start">3</td>
+            <td class="text-start">Janko Danko couh syrup</td>
+            <td>01</td>
+            <td>BWP50</td>
+            <td>BWP50</td>
+          </tr>
+          <tr class="text-end">
+            <td class="text-start">4</td>
+            <td class="text-start">Alergex</td>
+            <td>01</td>
+            <td>BWP30</td>
+            <td>BWP30</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
 </div>
+<div class="container-fluid mt-5 w-100">
+  <div class="row">
+    <div class="col-md-6 ms-auto">
+        <div class="table-responsive">
+          <table class="table">
+              <tbody>
+                <tr>
+                  <td>Sub Total</td>
+                  <td class="text-end">BWP 430.00</td>
+                </tr>
+                <tr>
+                  <td>TAX (12%)</td>
+                  <td class="text-end">BWP 50.00</td>
+                </tr>
+                <tr>
+                  <td class="text-bold-800">Total</td>
+                  <td class="text-bold-800 text-end"> BWP 430.00</td>
+                </tr>
+                <tr>
+                  <td>Payment Made</td>
+                  <td class="text-danger text-end">(-) BWP 500.00</td>
+                </tr>
+                <tr class="bg-light">
+                  <td class="text-bold-800">Balance Due</td>
+                  <td class="text-bold-800 text-end">BWP 430.00</td>
+                </tr>
+              </tbody>
+          </table>
+        </div>
+    </div>
+  </div>
+</div>
+<div class="container-fluid w-100">
+  <a href="javascript:;" class="btn btn-primary float-end mt-4 ms-2"><i data-feather="send" class="me-3 icon-md"></i>Send Invoice</a>
+  <a href="javascript:;" class="btn btn-outline-primary float-end mt-4"><i data-feather="printer" class="me-2 icon-md"></i>Print</a>
+</div>
+</div>
+</div>
+    </div>
+</div>
+<!-----End of invoice section-->
+
 
           </div>
         </div>
@@ -382,6 +461,7 @@
       </script>
 
 </body>
+
 
 <footer class="p-2 rounded-md shadow md:px-6 md:py-12 " style="background-color: #000435">
     <div class="sm:flex sm:items-center sm:justify-between">
