@@ -17,7 +17,7 @@ class HomeController extends Controller
                 return view('office_assistant');
             }
             elseif(Auth::user()->role=='2'){
-                return view('doctordashboard');
+                return view('doctor');
             }
             else{
                 return view('admin.admin_dashboard');
