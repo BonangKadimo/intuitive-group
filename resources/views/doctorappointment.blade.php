@@ -1,6 +1,29 @@
 @extends('layouts.doclayout')
 @section('content')
-<h1>HERE GOES THE RECORDS</h1>
+<html>
+<head>
+<style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+</style>
+</head>
+<body>
+
+<h2>APPOINTMENTS</h2>
+
 <table>
   <tr>
     <th>Patient Names</th>
@@ -17,40 +40,43 @@
     <td>08:00</td>
   </tr>
   <tr>
-    <td>Alfreds Futterkiste</td>
+    <td>Bonang Kadimo</td>
     <td>7654433332</td>
     <td>123</td>
     <td>12/10/22</td>
     <td>08:00</td>
   </tr>
    <tr>
-    <td>Alfreds Futterkiste</td>
+    <td>Joan Kehakae</td>
     <td>7654433332</td>
     <td>123</td>
     <td>12/10/22</td>
     <td>08:00</td>
   </tr>
   <tr>
-    <td>Alfreds Futterkiste</td>
+    <td>Kabelo Gaogomotswe</td>
     <td>7654433332</td>
     <td>123</td>
     <td>12/10/22</td>
     <td>08:00</td>
   </tr>
   <tr>
-    <td>Alfreds Futterkiste</td>
+    <td>Sethunya Gabana</td>
     <td>7654433332</td>
     <td>123</td>
     <td>12/10/22</td>
     <td>08:00</td>
   </tr>
   <tr>
-    <td>Alfreds Futterkiste</td>
+    <td>Boago Mosidila</td>
     <td>7654433332</td>
     <td>123</td>
     <td>12/10/22</td>
     <td>08:00</td>
   </tr>
 </table>
-    
+
+</body>
+</html>
+
 @endsection
