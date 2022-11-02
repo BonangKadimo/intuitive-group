@@ -45,7 +45,7 @@
                   </div>
                 </li>
                 <li>
-                  <a href="#" class="relative flex flex-row items-center h-11 focus:outline-none hover:bg-blue-800 dark:hover:bg-gray-600 text-white-600 hover:text-white-800 border-l-4 border-transparent hover:border-blue-500 dark:hover:border-gray-800 pr-6">
+                  <a href="{{url('admin_dashboard')}}" class="relative flex flex-row items-center h-11 focus:outline-none hover:bg-blue-800 dark:hover:bg-gray-600 text-white-600 hover:text-white-800 border-l-4 border-transparent hover:border-blue-500 dark:hover:border-gray-800 pr-6">
                     <span class="inline-flex justify-center items-center ml-4">
                       <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path>
@@ -76,7 +76,7 @@
                   </a>
                 </li>
                 <li>
-                  <a href="#" class="relative flex flex-row items-center h-11 focus:outline-none hover:bg-blue-800 dark:hover:bg-gray-600 text-white-600 hover:text-white-800 border-l-4 border-transparent hover:border-blue-500 dark:hover:border-gray-800 pr-6">
+                  <a href="{{'admin_office_assistant'}}" class="relative flex flex-row items-center h-11 focus:outline-none hover:bg-blue-800 dark:hover:bg-gray-600 text-white-600 hover:text-white-800 border-l-4 border-transparent hover:border-blue-500 dark:hover:border-gray-800 pr-6">
                     <span class="inline-flex justify-center items-center ml-4">
                       <svg class="w-5 h-5" fill="white" stroke="currentColor" style="enable-background:new 0 0 122.88 100.32" viewBox="0 0 122.88 100.32">
                         <path d="M27.63 16.77c-.51.02-.89.12-1.15.3-.15.1-.26.23-.33.38-.08.17-.11.37-.11.61.02.69.38 1.6 1.09 2.64l.01.01 2.28 3.63c.91 1.45 1.87 2.94 3.06 4.03 1.14 1.05 2.54 1.76 4.37 1.76 1.99 0 3.45-.73 4.63-1.84 1.23-1.15 2.2-2.73 3.15-4.3l2.57-4.23c.48-1.09.65-1.82.54-2.25-.06-.26-.35-.38-.83-.4-.1 0-.21-.01-.31 0-.11 0-.23.01-.36.02-.07.01-.13 0-.2-.01-.23.01-.46 0-.7-.04l.88-3.89c-6.53 1.03-11.41-3.82-18.31-.97l.5 4.59c-.27.01-.53 0-.78-.04zm46.64-4.74h40.28a2.94 2.94 0 0 1 2.93 2.93V38.8a2.94 2.94 0 0 1-2.93 2.93H98.99l2.29 5.76h17.17c1.22 0 2.33.5 3.13 1.3.8.8 1.3 1.91 1.3 3.13v10.11c0 1.21-.5 2.32-1.3 3.12l-.01.01c-.8.8-1.91 1.3-3.12 1.3h-2.78v30.51c0 .92-.38 1.76-.98 2.37-.61.61-1.45.98-2.37.98H11.6c-.93 0-1.77-.38-2.38-.99-.06-.06-.11-.12-.16-.18-.51-.59-.83-1.36-.83-2.2v-30.5h-3.8c-1.22 0-2.33-.5-3.13-1.3-.05-.05-.1-.1-.14-.15A4.402 4.402 0 0 1 0 62.02V51.91c0-1.22.5-2.33 1.3-3.13.05-.05.11-.1.16-.14.79-.72 1.83-1.15 2.97-1.15h8.09c-.06-.21-.11-.43-.13-.68.08-6.38-.89-7.57 5.82-11.32 2.46-1.37 8.8-1.84 11.57-3.65.42-.8.89-2.22 1.17-3.07l.03-.08c-1.02-1.09-1.85-2.38-2.65-3.65l-2.28-3.62c-.83-1.24-1.27-2.38-1.29-3.31-.01-.44.06-.84.22-1.19.17-.37.43-.67.78-.91.16-.11.35-.2.55-.28-.15-1.97-.2-4.44-.11-6.52.05-.49.14-.98.28-1.48.83-2.98 3.4-5.13 6.33-6.14 1.43-.49.88-1.66 2.32-1.59 3.4.19 8.65 2.38 10.67 4.7 2.83 3.26 2.1 7.27 2 11.25.63.19 1.04.59 1.2 1.24.18.72-.02 1.73-.62 3.11-.01.03-.02.05-.04.07l-2.6 4.28c-1 1.65-2.02 3.3-3.38 4.57l-.06.08c.13.19.27.39.42.61.45.66.96 1.41 1.44 2 2.82 1.76 9.04 2.23 11.46 3.58 6.18 3.45 4.65 5.29 5.1 11.32-.02.24-.07.47-.13.68h27l2.69-5.76H74.27a2.94 2.94 0 0 1-2.93-2.93V14.96c0-1.62 1.32-2.93 2.93-2.93zM9.59 51.65a1.841 1.841 0 0 1-.66 0h-4.5c-.05 0-.11.01-.14.04l-.04.04a.25.25 0 0 0-.08.18v10.11c0 .06.02.11.04.15l.03.03c.05.05.11.08.18.08h5.6c.09-.01.19-.02.28-.02.1 0 .19.01.28.02h102.71c.09-.01.19-.02.28-.02.1 0 .19.01.28.02h4.58c.07 0 .14-.03.18-.07.05-.05.07-.11.07-.19V51.91a.25.25 0 0 0-.08-.18.25.25 0 0 0-.18-.08H9.59zm2.81 14.8v29.7h99.11v-29.7H12.4zm19.82-30.56c-1.15-1.31-1.25-2.68 0-4.13 1.44.36 2.76.99 3.98 1.83.26-.11.57-.16.87-.14 1.26-.9 2.88-1.26 4.29-1.93 1.68 1.64 1.5 3.15-.15 4.55-.92-.21-1.8-.54-2.65-.97-.02.22-.08.45-.18.71l1.84 8.72c1.4-2.94 2.85-7.62 3.22-11.42-.61-.69-1.26-1.64-1.82-2.46-.13-.19-.25-.36-.36-.53-1.19.8-2.61 1.29-4.39 1.29-1.98 0-3.52-.68-4.8-1.72-.36 1.07-.89 2.55-1.39 3.26-.04.05-.08.1-.13.14.67 4.13 2.11 8.61 3.43 11.45l1.84-8.72c-.27-.45-.37-.84-.36-1.17-1.02.6-2.11.99-3.24 1.24z" style="fill-rule:evenodd;clip-rule:evenodd"/>
@@ -137,7 +137,7 @@
         @include('admin.components.register_patient_modal')
     </div>
 
-    <div class="flex justify-center">
+    <div class="flex justify-center z-10">
         <div class="overflow-x-auto relative shadow-md sm:rounded-lg mt-6 w-3/4">
           <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
               <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">

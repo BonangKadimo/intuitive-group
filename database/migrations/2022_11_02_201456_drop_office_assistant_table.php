@@ -13,9 +13,7 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::table('patients', function(Blueprint $table){
-            $table->dropColumn('name');
-        });
+        Schema::drop('office_assistant');
     }
 
     /**
@@ -25,10 +23,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::table('patients', function(Blueprint $table){
-            $table->string('name');
-        });
-            
-        
+        Schema::dropIfExists('office_assistants');
     }
 };

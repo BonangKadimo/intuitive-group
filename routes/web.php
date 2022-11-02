@@ -43,6 +43,11 @@ Route::get('/admin_patient', [AdminController::class, 'patient_crud']);
 Route::get('/admin_patient', [AdminController::class, 'show_patients']);
 Route::post('/upload_patient', [AdminController::class, 'upload_patient']);
 Route::get('/delete_patient', [AdminController::class, 'delete_doctor']);
+//Controller for admin -> office_assistant interaction
+Route::get('/admin_office_assistant', [AdminController::class, 'office_assistant_crud']);
+Route::get('/admin_office_assistant', [AdminController::class, 'show_office_assistant']);
+Route::post('/upload_office_assistant', [AdminController::class, 'upload_office_assistant']);
+Route::get('/delete_office_assistant', [AdminController::class, 'delete_office_assistant']);
 
 Route::get('/doctorappointment',[DoctorController::class,'doctorappointment'])->name('home.doctorappointment');
 Route::get('/doctorschedule',[DoctorController::class,'doctorschedule'])->name('home.doctorschedule'); 

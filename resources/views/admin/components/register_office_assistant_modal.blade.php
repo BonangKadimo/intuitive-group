@@ -11,7 +11,7 @@
 
 <body class="bg-gray-200 flex items-center justify-center h-screen">
   
-  <button class="modal-open bg-transparent border border-white hover:border-indigo-500 text-white hover:text-indigo-500 font-bold py-2 px-4 rounded-full">Add Doctor</button>
+  <button class="modal-open bg-transparent border border-white hover:border-indigo-500 text-white hover:text-indigo-500 font-bold py-2 px-4 rounded-full">Add Office Assistant</button>
   
   <!--Modal-->
   <div class="modal opacity-0 pointer-events-none fixed w-full h-full top-0 left-0 flex items-center justify-center z-20">
@@ -41,35 +41,18 @@
         <!--Body-->
         <p>Modal content can go here</p>
         <div class="text-black">
-            <form action="{{url('upload_doctor')}}" method="POST">
-                <h1 class="text-[#042473] font-bold mb-4" style = "cursor: pointer">Add Doctor</h1>
+            <form action="{{url('upload_office_assistant')}}" method="POST">
+                <h1 class="text-[#042473] font-bold mb-4" style = "cursor: pointer">Add Patient</h1>
                 @csrf
                 <div class="flex flex-col">
                     
-                    <label for="doctor_name">Name</label>
-                    <input type="text" name="doctor_name" placeholder="..." class="rounded-lg bg-gray-50 border-gray-300">
+                    <label for="office_assistant">Name</label>
+                    <input type="text" name="office_assistant" placeholder="..." class="rounded-lg bg-gray-50 border-gray-300">
 
-                    <label for="doctor_email">Email</label>
-                    <input type="text" name="doctor_email" placeholder="..." class="rounded-lg bg-gray-50 border-gray-300">
+                    <label for="assigned_doctor">Assigned Doctor</label>
+                    <input type="text" name="assigned_doctor" placeholder="..." class="rounded-lg bg-gray-50 border-gray-300">
 
-                    <label for="department">Department</label>
-                    <select name="department" id="" class="rounded-lg bg-gray-50 border-gray-300">
-                        <option value="">---Select---</option>
-                        <option value="Dentistry">Dentistry</option>
-                        <option value="Dermatology">Dermatology</option>
-                        <option value="Opthalmology">Opthalmology</option>
-
-                    </select>
-                    <label for="room">Room</label>
-                    <select name="room" id="" class="rounded-lg bg-gray-50 border-gray-300">
-                        <option value="">---Select---</option>
-                        <option value="1">One</option>
-                        <option value="2">Two</option>
-                        <option value="3">Three</option>
-                        <option value="4">Four</option>
-                        <option value="5">Five</option>
-                        <option value="6">Six</option>
-                    </select>
+                    
                     
                 </div>
                 <div class="flex justify-center mt-3">
