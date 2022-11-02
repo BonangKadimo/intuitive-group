@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\DoctorController;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,25 +16,11 @@ use App\Http\Controllers\HomeController;
 |
 */
 
-Route::get('/', function () {
-    return view('landing');
-});
-
-//Route::get('dash', function () {
-//    return view('dashcompo');
-//});
-
-Route::get('home',function(){
-    return view('landing');
-});
-
-Route::get('/admin', function(){
-    return view('admin');
-});
-Route::get('/redirects', [HomeController::class, "index"]);
 
 
+Route::get('/', [HomeController::class, 'index']);
 
+Route::get('/home', [HomeController::class, 'redirect']);
 
 Route::middleware([
     'auth:sanctum',
@@ -44,3 +31,13 @@ Route::middleware([
         return view('dashboard');
     })->name('dashboard');
 });
+
+//i am trying things out
+Route::get('/doctorappointment',[DoctorController::class,'doctorappointment'])->name('home.doctorappointment');
+Route::get('/doctorschedule',[DoctorController::class,'doctorschedule'])->name('home.doctorschedule'); 
+Route::get('/doctorpatientmanagement',[DoctorController::class,'doctorpatientmanagement'])->name('home.doctorpatientmanagement'); 
+Route::get('/doctorpatienthistory',[DoctorController::class,'doctorpatienthistory'])->name('home.doctorpatienthistory'); 
+Route::get('/doctorpatientprescription',[DoctorController::class,'doctorpatientprescription'])->name('home.doctorpatientprescription');
+Route::get('/dischargepatients',[DoctorController::class,'dischargepatients'])->name('home.dischargepatients');
+Route::get('/doctor',[DoctorController::class,'doctor'])->name('home.doctor');
+

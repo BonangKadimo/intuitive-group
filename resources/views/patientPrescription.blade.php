@@ -387,12 +387,31 @@
 
 </body>
 
+<footer class="p-2 rounded-md shadow md:px-6 md:py-12 " style="background-color: #000435">
+    <div class="sm:flex sm:items-center sm:justify-between">
+        <a href="/" target="_blank" class="flex items-center mb-2 sm:mb-0">
+            <img src="logo.svg" class="mr-4 " alt=" Logo" style="height: 80px" />
 
-<!-- add footer -->
-
-
-
-
-
+        </a>
+        <ul class="flex flex-wrap items-center mb-3 sm:mb-0">
+            <li>
+                <a href="#" class="mr-4 text-sm text-gray-500 hover:underline md:mr-3 dark:text-gray-400">Sign in
+Request Status</a>
+            </li>
+            <li>
+                <a href="#" class="mr-4 text-sm text-gray-500 hover:underline md:mr-3 dark:text-gray-400">Help</a>
+            </li>
+            <li>
+                <a href="#"
+                    class="mr-4 text-sm text-gray-500 hover:underline md:mr-3 dark:text-gray-400">FAQ</a>
+            </li>
+            <li>
+                <a href="#" class="text-sm text-gray-500 hover:underline dark:text-gray-400">Contact Support </a>
+            </li>
+        </ul>
+    </div>
+    <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 sm:my-8" />
+   
+</footer>
 
 </html>

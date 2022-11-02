@@ -22,6 +22,31 @@
         font-family: 'Nunito', sans-serif;
     }
 </style>
+<style>
+        table { 
+            table-layout:fixed;
+            width: 100%;
+        }
+        th,
+        td {
+            overflow: hidden; 
+            text-overflow: ellipsis; 
+            word-wrap: break-word;
+            border-collapse: collapse;
+            padding: 5px;
+        }
+ 
+        tr:nth-child(odd) {
+            background-color: #8F9AA5;
+        }
+
+        .avatar {
+            vertical-align: middle;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+        }
+    </style>
 </head>
 <!-- add nav bar -->
 <body>
@@ -324,37 +349,110 @@
 
 
 <div class="py-8 ">  
-              
-<h1 class="font-bold text-3xl md:text-4xl lg:text-5xl font-heading text-white">
-           Payment Section
-        </h1><br><br>
     <div class="text-center pb-12">
-
-<form>
-  <div class="mb-6 text-white">
-    <label for="email" class="block mb-2 text-xl font-medium text-white dark:text-white">Item</label>
-    <input type="email" id="email" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light" required="">
-  </div>
-  <div class="mb-6">
-    <label for="password" class="block mb-2 text-xl font-medium text-white dark:text-white">Reference</label>
-    <input type="password" id="password" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light" required="">
-  </div>
-  <div class="mb-6">
-    <label for="repeat-password" class="block mb-2 text-xl font-medium text-white dark:text-white">Amount</label>
-    <input type="password" id="repeat-password" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light" required="">
-  </div>
-  <div class="flex items-start mb-6">
-    <div class="flex items-center h-5">
-      <input id="terms" type="checkbox" value="" class="w-4 h-4 bg-gray-50 rounded border border-gray-300 focus:ring-3 focus:ring-blue-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-blue-600 dark:ring-offset-gray-800" required="">
+          
+        <h1 class="font-bold text-3xl md:text-4xl lg:text-5xl font-heading text-white">
+           Meet your doctors!
+        </h1>
     </div>
-    <label for="terms" class="ml-2 text-sm font-medium text-white dark:text-white">I agree with the <a href="#" class="text-white hover:underline dark:text-blue-500">terms and conditions</a></label>
-  </div>
-  <button type="submit" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Proceed to Payment</button>
-</form>
-
+    <div class=" bg-white" >
+        
+                   
+    <table>
+        <tr>
+            <td class="font-bold">Doctor</td>
+            <td class="font-bold">Department</td>
+            <td class="font-bold">Photo</td>
+            <td class="font-bold">Office</td>
+        </tr>
+        <tr>
+            <td>Doctor 1</td>
+            <td>Dentistry</td>
+            <td><img src="avatar.jpg" alt="Avatar" class="avatar"></td>
+            <td>222</td>
+        </tr>  
+        <tr>
+            <td>Doctor 1</td>
+            <td>Dentistry</td>
+            <td><img src="avatar.jpg" alt="Avatar" class="avatar"></td>
+            <td>222</td>
+        </tr> 
+        <tr>
+            <td>Doctor 1</td>
+            <td>Dentistry</td>
+            <td><img src="avatar.jpg" alt="Avatar" class="avatar"></td>
+            <td>222</td>
+        </tr> 
+        <tr>
+            <td>Doctor 1</td>
+            <td>Dentistry</td>
+            <td><img src="avatar.jpg" alt="Avatar" class="avatar"></td>
+            <td>222</td>
+        </tr> 
+        <tr>
+            <td>Doctor 1</td>
+            <td>Dentistry</td>
+            <td><img src="avatar.jpg" alt="Avatar" class="avatar"></td>
+            <td>222</td>
+        </tr> 
+        <tr>
+            <td>Doctor 1</td>
+            <td>Dentistry</td>
+            <td><img src="avatar.jpg" alt="Avatar" class="avatar"></td>
+            <td>222</td>
+        </tr> 
+        <tr>
+            <td>Doctor 1</td>
+            <td>Dentistry</td>
+            <td><img src="avatar.jpg" alt="Avatar" class="avatar"></td>
+            <td>222</td>
+        </tr> 
+        <tr>
+            <td>Doctor 1</td>
+            <td>Dentistry</td>
+            <td><img src="avatar.jpg" alt="Avatar" class="avatar"></td>
+            <td>222</td>
+        </tr> 
+        <tr>
+            <td>Doctor 1</td>
+            <td>Dentistry</td>
+            <td><img src="avatar.jpg" alt="Avatar" class="avatar"></td>
+            <td>222</td>
+        </tr> 
+        <tr>
+            <td>Doctor 1</td>
+            <td>Dentistry</td>
+            <td><img src="avatar.jpg" alt="Avatar" class="avatar"></td>
+            <td>222</td>
+        </tr> 
+        <tr>
+            <td>Doctor 1</td>
+            <td>Dentistry</td>
+            <td><img src="avatar.jpg" alt="Avatar" class="avatar"></td>
+            <td>222</td>
+        </tr> 
+        <tr>
+            <td>Doctor 1</td>
+            <td>Dentistry</td>
+            <td><img src="avatar.jpg" alt="Avatar" class="avatar"></td>
+            <td>222</td>
+        </tr> 
+        <tr>
+            <td>Doctor 1</td>
+            <td>Dentistry</td>
+            <td><img src="avatar.jpg" alt="Avatar" class="avatar"></td>
+            <td>222</td>
+        </tr> 
+        <tr>
+            <td>Doctor 1</td>
+            <td>Dentistry</td>
+            <td><img src="avatar.jpg" alt="Avatar" class="avatar"></td>
+            <td>222</td>
+        </tr>       
+    </table>
+        </div>
+    </div>
 </div>
-
-
 
           </div>
         </div>
@@ -388,6 +486,7 @@
 </body>
 
 
+<!-- add footer -->
 <footer class="p-2 rounded-md shadow md:px-6 md:py-12 " style="background-color: #000435">
     <div class="sm:flex sm:items-center sm:justify-between">
         <a href="/" target="_blank" class="flex items-center mb-2 sm:mb-0">
