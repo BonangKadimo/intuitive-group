@@ -7,6 +7,28 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
+
+## Running on a new machine
+
+
+
+```
+npm install jetstream
+```
+```
+php artisan migrate
+```
+### How to fix 500 server error 
+```
+composer install 
+mv .env.example .env 
+php artisan cache:clear 
+composer dump-autoload 
+php artisan key:generate
+```
+
+
+
 ## About Laravel
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:

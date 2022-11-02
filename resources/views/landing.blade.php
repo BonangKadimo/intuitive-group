@@ -110,6 +110,13 @@
 			</div>
 		</nav>
 	</div>
+    <!-- scrolling thing -->
+    <marquee width="100%" style="color:Red" direction="left" scrollamount="6"><b>COVID-19 affects different people in different ways.      ||     Most infected people will develop mild to moderate illness and recover without hospitalization.
+         ||     Most common symptoms: fever, cough, tiredness, loss of taste or smell || Less common symptoms: sore throat, headache, aches and pains, diarrhoea, a rash on skin, or discolouration of fingers or toes
+red or irritated eyes</b><br>
+</marquee>
+    
+    
     <!-- This is mole ga slide show cass cass  component -->
     <div class=" mx-auto">
 
