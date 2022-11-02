@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 
@@ -221,6 +222,7 @@
           </div>
           <!-- ./Header -->
 
+          <!-- Sidebar -->
           <div class="fixed flex flex-col top-14 left-0 w-14 hover:w-64 md:w-64 h-full text-white transition-all duration-300 border-none z-10 sidebar" style="background-color: #000435"><!- side bar color -->
             <div class="overflow-y-auto overflow-x-hidden flex flex-col justify-between flex-grow">
               <ul class="flex flex-col py-4 space-y-1">
@@ -322,30 +324,31 @@
 
 
 <div class="py-8 ">  
-        <h1 class="font-bold text-3xl md:text-4xl lg:text-5xl font-heading text-white">
-           View Prescription
-        </h1><br>
     <div class="text-center pb-12">
-
+          
+        <h1 class="font-bold text-3xl md:text-4xl lg:text-5xl font-heading text-white">
+           Welcome to Dashboard!
+        </h1>
+    </div>
     <div class="container m-auto px-6 text-gray-500 md:px-12 xl:px-0" >
         <div class="mx-auto grid gap-6 md:w-3/4 lg:w-full lg:grid-cols-3">
             <div class="bg-white rounded-2xl shadow-xl px-8 py-12 sm:px-12 lg:px-8">
                 <div class="mb-12 space-y-4">
-                    <h3 class="text-2xl font-semibold text-purple-900">Medication prescribed</h3>
+                    <h3 class="text-2xl font-semibold text-purple-900">Appointments Ahead</h3>
                     <p class="mb-6">Obcaecati, quam? Eligendi, nulla numquam natus laborum porro at cum, consectetur ullam tempora ipsa iste officia sed officiis! Incidunt ea animi officiis.</p>
                     <a href="#" class="block font-medium text-purple-600">Know more</a>
                 </div>
                 </div>
             <div class="bg-white rounded-2xl shadow-xl px-8 py-12 sm:px-12 lg:px-8">
                 <div class="mb-12 space-y-4">
-                    <h3 class="text-2xl font-semibold text-purple-900">Info on Medication</h3>
+                    <h3 class="text-2xl font-semibold text-purple-900">Doctor's Note</h3>
                     <p class="mb-6">Obcaecati, quam? Eligendi, nulla numquam natus laborum porro at cum, consectetur ullam tempora ipsa iste officia sed officiis! Incidunt ea animi officiis.</p>
                     <a href="#" class="block font-medium text-purple-600">Know more</a>
                 </div>
                </div>
             <div class="bg-white rounded-2xl shadow-xl px-8 py-12 sm:px-12 lg:px-8">
                 <div class="mb-12 space-y-4">
-                    <h3 class="text-2xl font-semibold text-purple-900">The Doctor</h3>
+                    <h3 class="text-2xl font-semibold text-purple-900">Health Tips</h3>
                     <p class="mb-6">Obcaecati, quam? Eligendi, nulla numquam natus laborum porro at cum, consectetur ullam tempora ipsa iste officia sed officiis! Incidunt ea animi officiis.</p>
                     <a href="#" class="block font-medium text-purple-600">Know more</a>
                 </div>
