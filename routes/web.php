@@ -3,8 +3,7 @@
 use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\HomeController;
-use App\Http\Controllers\DoctorController;
-use App\Http\Controllers\PatientController;
+use App\Http\Controllers\AdminController;
 
 /*
 |--------------------------------------------------------------------------
@@ -23,6 +22,8 @@ Route::get('/', [HomeController::class, 'index']);
 
 Route::get('/home', [HomeController::class, 'redirect']);
 
+
+
 Route::middleware([
     'auth:sanctum',
     config('jetstream.auth_session'),
@@ -32,8 +33,17 @@ Route::middleware([
         return view('dashboard');
     })->name('dashboard');
 });
+//Controller for admin -> doctor interaction
+Route::get('/admin_doctor', [AdminController::class, 'doctor_crud']);
+Route::get('/admin_doctor', [AdminController::class, 'show_doctors']);
+Route::post('/upload_doctor', [AdminController::class, 'upload']);
+Route::get('delete_doctor/{id}', [AdminController::class, 'delete_doctor']);
+//Controller for admin -> patient interaction 
+Route::get('/admin_patient', [AdminController::class, 'patient_crud']);
+Route::get('/admin_patient', [AdminController::class, 'show_patients']);
+Route::post('/upload_patient', [AdminController::class, 'upload_patient']);
+Route::get('/delete_patient', [AdminController::class, 'delete_doctor']);
 
-//i am trying things out
 Route::get('/doctorappointment',[DoctorController::class,'doctorappointment'])->name('home.doctorappointment');
 Route::get('/doctorschedule',[DoctorController::class,'doctorschedule'])->name('home.doctorschedule'); 
 Route::get('/doctorpatientmanagement',[DoctorController::class,'doctorpatientmanagement'])->name('home.doctorpatientmanagement'); 
@@ -47,5 +57,3 @@ Route::get('/patientdoctor',[PatientController::class,'patientdoctor'])->name('h
 Route::get('/patientPrescription',[PatientController::class,'patientPrescription'])->name('home.patientPrescription'); 
 Route::get('/patientpayment',[PatientController::class,'patientpayment'])->name('home.patientpayment'); 
 Route::get('/patient',[PatientController::class,'patient'])->name('home.patient');
-
-
