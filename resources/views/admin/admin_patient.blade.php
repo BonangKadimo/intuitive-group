@@ -61,7 +61,7 @@
                         <path d="M14.61 72.18c5-.41 8.43-3.22 10.77-7.28s3.62-9.55 4.25-15.07c.33-2.91.53-6 .73-9 1-15.22 2-31.64 19.33-38.63a29.49 29.49 0 0 1 25.53 1.6 28.69 28.69 0 0 1 12.35 14.36A36.78 36.78 0 0 1 90 28.29v.06c0 9.19 1.42 22.09 5.41 31.55 2.87 6.8 7 11.81 12.87 12.28a.45.45 0 0 1 .41.47v.14c-1.13 3.11-6.29 5.42-12.4 6.44 9.08 2.18 15.36 4.79 19.59 9.46 5.13 5.66 7 14.08 7 28.08a1.68 1.68 0 0 1-1.67 1.68H1.67A1.68 1.68 0 0 1 0 116.77C0 103.14 1.82 94.71 6.66 89c4-4.7 9.88-7.39 18.38-9.48-5.32-1.19-9.71-3.66-10.81-6.77a.44.44 0 0 1 .27-.56h.11Zm61.32 4.67q-.53-.33-1-.69a8.14 8.14 0 0 1-2.52-3.08 18.67 18.67 0 0 1-11.07 3.35 18.29 18.29 0 0 1-12.14-4.49c-.58 2.37-1.54 5-2.77 5.7-3.27 2-8.53 2.84-12.37 3.47-.92.15-1.76.28-2.5.43-1.22.24-2.4.48-3.53.73 10.89 10.59 21.86 16.5 32.9 16.84s22.37-5 33.95-16.77c-1.68-.4-3.47-.78-5.36-1.16l-.27-.06c-3.32-.65-9.38-1.87-13.2-4.19l-.12-.08ZM44.84 59.93a31.64 31.64 0 0 1-.49-4.75 1.75 1.75 0 0 1 0-.33l-4.29-7a26 26 0 0 0 2.37 7.7 51.48 51.48 0 0 0 2.35 4.29Zm-5.07-16.59 6.53 10.28a45.13 45.13 0 0 1 15-3.24 33.52 33.52 0 0 1 15 3.12l7.33-11.14V42a50 50 0 0 0-1-9.8 19.42 19.42 0 0 1-7.88-7.09 34.47 34.47 0 0 1-4.32-10.25c-2.9 12.4-15.38 15.29-24 17.28a31.83 31.83 0 0 0-6.65 2c0 1.46 0 3-.08 4.42 0 1.69-.09 3.3-.06 4.87Zm43.68 3.25-5.17 8.06a.36.36 0 0 1 0 .09 1.06 1.06 0 0 1 .08.4 27.31 27.31 0 0 1-.25 4.12c.4-.54.79-1.09 1.17-1.64a39.5 39.5 0 0 0 3.42-6.22 48.12 48.12 0 0 0 .75-4.81Zm-27.07-9.86c1.8.68 2.18 2.18 1.17 2.74-1.18.66-2.66-.32-3.81-.69-3-1-6.58-1.07-9.17.55A14.92 14.92 0 0 0 42.46 41a7.26 7.26 0 0 1 1.28-2.58c2.61-3.28 9.16-3.48 12.64-1.69Zm10.13 0c-1.8.68-2.18 2.18-1.18 2.74 1.19.66 2.67-.32 3.82-.69 3-1 6.57-1.07 9.17.55A14.92 14.92 0 0 1 80.43 41a7.43 7.43 0 0 0-1.28-2.58c-2.61-3.28-9.16-3.48-12.64-1.69Zm-19.92 6.46a.78.78 0 0 1-.5-.54.87.87 0 0 1 .46-1.07 12.37 12.37 0 0 1 9 0 .87.87 0 0 1 .45 1.05.74.74 0 0 1-.93.55 13.08 13.08 0 0 0-1.47-.45 2.1 2.1 0 0 1 .07.56 2.07 2.07 0 1 1-4-.8 11.45 11.45 0 0 0-2.23.53 1.34 1.34 0 0 1-.85.17Zm23.24-.52a2.12 2.12 0 0 0-.1.62 2.08 2.08 0 0 0 4.15 0 2.14 2.14 0 0 0-.21-.92 13.66 13.66 0 0 1 2.73.6.73.73 0 0 0 .92-.58.87.87 0 0 0-.51-1 14.29 14.29 0 0 0-4.48-.73 13.8 13.8 0 0 0-4.42.74.87.87 0 0 0-.51 1 .73.73 0 0 0 .91.57c.49-.16 1-.29 1.46-.4.14 0 .11-.06.06.1Z"/>
                       </svg>
                     </span>
-                    <span class="ml-2 text-sm tracking-wide truncate">Patients</span>
+                    <span class="ml-2 text-sm tracking-wide truncate text-[#fd2d2b]">Patients</span>
                     <!--<span class="hidden md:block px-2 py-0.5 ml-auto text-xs font-medium tracking-wide text-blue-500 bg-indigo-50 rounded-full">New</span>-->
                   </a>
                 </li>
@@ -127,11 +127,87 @@
 
 
             </div>
-
-
+            
+            
 
 <!-- Add your content here       -->
+<div class ="flex flex-col ">
+    <div class="flex justify-evenly content-center">
+        <h1 class="mt-2">Patients</h1>
+        @include('admin.components.register_patient_modal')
+    </div>
 
+    <div class="flex justify-center">
+        <div class="overflow-x-auto relative shadow-md sm:rounded-lg mt-6 w-3/4">
+          <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
+              <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+                  <tr>
+                      <th scope="col" class="py-3 px-6">
+                          Patient Name
+                      </th>
+                      <th scope="col" class="py-3 px-6">
+                          <div class="flex items-center">
+                              Phone Number
+                              <a href="#"><svg xmlns="http://www.w3.org/2000/svg" class="ml-1 w-3 h-3" aria-hidden="true" fill="currentColor" viewBox="0 0 320 512"><path d="M27.66 224h264.7c24.6 0 36.89-29.78 19.54-47.12l-132.3-136.8c-5.406-5.406-12.47-8.107-19.53-8.107c-7.055 0-14.09 2.701-19.45 8.107L8.119 176.9C-9.229 194.2 3.055 224 27.66 224zM292.3 288H27.66c-24.6 0-36.89 29.77-19.54 47.12l132.5 136.8C145.9 477.3 152.1 480 160 480c7.053 0 14.12-2.703 19.53-8.109l132.3-136.8C329.2 317.8 316.9 288 292.3 288z"></path></svg></a>
+                          </div>
+                      </th>
+                      <th scope="col" class="py-3 px-6">
+                          <div class="flex items-center">
+                              Patient Type
+                              <a href="#"><svg xmlns="http://www.w3.org/2000/svg" class="ml-1 w-3 h-3" aria-hidden="true" fill="currentColor" viewBox="0 0 320 512"><path d="M27.66 224h264.7c24.6 0 36.89-29.78 19.54-47.12l-132.3-136.8c-5.406-5.406-12.47-8.107-19.53-8.107c-7.055 0-14.09 2.701-19.45 8.107L8.119 176.9C-9.229 194.2 3.055 224 27.66 224zM292.3 288H27.66c-24.6 0-36.89 29.77-19.54 47.12l132.5 136.8C145.9 477.3 152.1 480 160 480c7.053 0 14.12-2.703 19.53-8.109l132.3-136.8C329.2 317.8 316.9 288 292.3 288z"></path></svg></a>
+                          </div>
+                      </th>
+                      <th scope="col" class="py-3 px-6">
+                          <div class="flex items-center">
+                              Room
+                              <a href="#"><svg xmlns="http://www.w3.org/2000/svg" class="ml-1 w-3 h-3" aria-hidden="true" fill="currentColor" viewBox="0 0 320 512"><path d="M27.66 224h264.7c24.6 0 36.89-29.78 19.54-47.12l-132.3-136.8c-5.406-5.406-12.47-8.107-19.53-8.107c-7.055 0-14.09 2.701-19.45 8.107L8.119 176.9C-9.229 194.2 3.055 224 27.66 224zM292.3 288H27.66c-24.6 0-36.89 29.77-19.54 47.12l132.5 136.8C145.9 477.3 152.1 480 160 480c7.053 0 14.12-2.703 19.53-8.109l132.3-136.8C329.2 317.8 316.9 288 292.3 288z"></path></svg></a>
+                          </div>
+                      </th>
+                      <th scope="col" class="py-3 px-6">
+                          <span class="">Edit</span>
+                      </th>
+                      
+                  </tr>
+              </thead>
+              <tbody>
+                  @foreach($data as $patient)
+                  <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                      
+                      <td class="py-4 px-6">
+                         {{$patient->_patient_name}}
+                      </td>
+                      <td class="py-4 px-6">
+                        {{$patient->phone_number}}
+                      </td>
+                      <td class="py-4 px-6">
+                        {{$patient->patient_type}}
+                      </td>
+                      <td class="py-4 px-6">
+                        {{$patient->room_number}}
+                    </td>
+                     
+                    <td class="flex flex-row py-4 px-6 ">
+                      <a href="">
+                        <span class="text-xs font-semibold py-1 px-2  rounded-full text-amber-600 bg-amber-200 mr-1 ">
+                          edit
+                        </span>
+                      </a>
+                      <a onclick="return confirm('Are You sure you would like to delete this patient?') "href="{{url('delete_patient', $patient->id)}}">
+                      <span class="text-xs font-semibold  py-1 px-2  rounded-full text-rose-600 bg-rose-200 ">
+                        delete
+                      </span>
+                    </a>
+                    </td> 
+                  @endforeach  
+    
+              </tbody>
+          </table>
+        </div>
+      </div>
+      
+  </div>
+  
+</div>
 
 
 
