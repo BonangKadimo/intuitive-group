@@ -1,7 +1,8 @@
 <x-app-layout>
-
-  
-    <!DOCTYPE html>
+    <h1>doctor Dashboard</h1>
+    
+</x-app-layout>
+   <!--- <!DOCTYPE html>
     <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     
     <head>
@@ -224,19 +225,7 @@
     
     
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+ 
     
     <!-- /Add your content here       -->
     
@@ -282,9 +271,12 @@
     
     
     </html>
+
   
 
-</x-app-layout>
+  
+
+
 
 
 
