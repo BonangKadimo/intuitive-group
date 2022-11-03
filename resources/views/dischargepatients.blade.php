@@ -22,7 +22,7 @@ tr:nth-child(even) {
 </head>
 <body>
 
-<h2>PATIENT PRESCRIPTION</h2>
+<h2>PATIENT DISCHARGE SCREEN</h2>
 
 <table>
   <tr>
