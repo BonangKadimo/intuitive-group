@@ -33,8 +33,6 @@ Route::middleware([
         return view('dashboard');
     })->name('dashboard');
 });
-<<<<<<< Updated upstream
-=======
 
 //i am trying things out
 Route::get('/doctorappointment',[DoctorController::class,'doctorappointment'])->name('home.doctorappointment');
@@ -71,4 +69,3 @@ Route::get('/admin_office_assistant', [AdminController::class, 'office_assistant
 Route::get('/admin_office_assistant', [AdminController::class, 'show_office_assistant']);
 Route::post('/upload_office_assistant', [AdminController::class, 'upload_office_assistant']);
 Route::get('/delete_office_assistant{id}', [AdminController::class, 'delete_office_assistant']);
->>>>>>> Stashed changes
