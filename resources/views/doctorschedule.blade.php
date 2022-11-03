@@ -22,7 +22,7 @@ tr:nth-child(even) {
 </head>
 <body>
 
-<h2>PATIENT HISTORY</h2>
+<h2>DOCTOR'S SCHEDULE</h2>
 
 <table>
   <tr>
