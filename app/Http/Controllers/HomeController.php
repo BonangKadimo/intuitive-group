@@ -19,7 +19,7 @@ class HomeController extends Controller
             elseif(Auth::user()->role=='2'){
                 return view('doctor');
             }
-            else{
+            elseif(Auth::user()->role=='3'){
                 return view('admin.admin_dashboard');
             }
         }

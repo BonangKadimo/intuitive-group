@@ -3,6 +3,10 @@
 use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\AdminController;
+use App\Http\Controllers\PatientController;
+use App\Http\Controllers\DoctorController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -22,7 +26,7 @@ Route::get('/', function () {
 Route::get('home',function(){
     return view('landing');
 });
-route::get('/redirects', [HomeController::class, "index"]);
+Route::get('/home', [HomeController::class, "redirect"]);
 
 Route::middleware([
     'auth:sanctum',
