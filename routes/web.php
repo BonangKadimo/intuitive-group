@@ -6,6 +6,7 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\PatientController;
 use App\Http\Controllers\DoctorController;
+use App\Http\Controllers\OfficeController;;
 
 
 /*
@@ -53,11 +54,12 @@ Route::get('/patientPrescription',[PatientController::class,'patientPrescription
 Route::get('/patientpayment',[PatientController::class,'patientpayment'])->name('home.patientpayment'); 
 Route::get('/patient',[PatientController::class,'patient'])->name('home.patient');
 
-Route::get('/officeAassistant',[OfficeController::class,'officeAssistant/Demo1/office-assistant'])->name('office-assistant');
-Route::get('/patientdoctor',[PatientController::class,'patientdoctor'])->name('home.patientdoctor'); 
-Route::get('/patientPrescription',[PatientController::class,'patientPrescription'])->name('home.patientPrescription'); 
-Route::get('/patientpayment',[PatientController::class,'patientpayment'])->name('home.patientpayment'); 
-Route::get('/patient',[PatientController::class,'patient'])->name('home.patient');
+Route::get('/officerappointment',[OfficeController::class,'officerappointment'])->name('home.officerappointment');
+Route::get('/officerdoctor',[OfficeController::class,'officerdoctor'])->name('home.officerdoctor'); 
+Route::get('/officerprescription',[OfficeController::class,'officerprescription'])->name('home.officerprescription'); 
+Route::get('/officerpatientinvoice',[OfficeController::class,'officerpatientinvoice'])->name('home.officerpatientinvoice'); 
+Route::get('/office_assistant',[OfficeController::class,'office_assistant'])->name('home.office_assistant');
+Route::get('/officerdoctorschedule',[OfficeController::class,'officerdoctorschedule'])->name('home.officerdoctorschedule');
 //Controller for admin -> doctor interaction
 Route::get('/admin_doctor', [AdminController::class, 'doctor_crud']);
 Route::get('/admin_doctor', [AdminController::class, 'show_doctors']);

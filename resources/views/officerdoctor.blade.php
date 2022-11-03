@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 
@@ -22,27 +21,32 @@
         font-family: 'Nunito', sans-serif;
     }
 </style>
-{{-- style sa table --}}
 <style>
-    table {
-      font-family: arial, sans-serif;
-      border-collapse: collapse;
-      width: 100%;
-    }
-    
-    td, th {
-      border: 1px solid #040e1f;
-      text-align: left;
-      padding: 8px;
-    }
-    
-    tr:nth-child(even) {
-      background-color: #040e1f;
-    }
+        table { 
+            table-layout:fixed;
+            width: 100%;
+        }
+        th,
+        td {
+            overflow: hidden; 
+            text-overflow: ellipsis; 
+            word-wrap: break-word;
+            border-collapse: collapse;
+            padding: 5px;
+            text: black;
+        }
+ 
+        tr:nth-child(odd) {
+            background-color: #8F9AA5;
+        }
+
+        .avatar {
+            vertical-align: middle;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+        }
     </style>
- {{-- end of table style --}}
-
-
 </head>
 <!-- add nav bar -->
 <body>
@@ -231,7 +235,7 @@
                   <div class="block w-px h-6 mx-3 bg-gray-400 dark:bg-gray-700"></div>
                 </li>
                 <x-app-layout>
-    
+                
                 </x-app-layout>
               </ul>
             </div>
@@ -288,13 +292,13 @@
                   </a>
                 </li>
                 <li>
-                    <a href="{{route('home.officerdoctorschedule')}}" class="relative flex flex-row items-center h-11 focus:outline-none hover:bg-blue-800 dark:hover:bg-gray-600 text-white-600 hover:text-white-800 border-l-4 border-transparent hover:border-blue-500 dark:hover:border-gray-800 pr-6">
-                      <span class="inline-flex justify-center items-center ml-4">
-                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"></path></svg>
-                      </span>
-                      <span class="ml-2 text-sm tracking-wide truncate">Doctors Schedule</span>
-                    </a>
-                  </li>
+                  <a href="{{route('home.officerdoctorschedule')}}" class="relative flex flex-row items-center h-11 focus:outline-none hover:bg-blue-800 dark:hover:bg-gray-600 text-white-600 hover:text-white-800 border-l-4 border-transparent hover:border-blue-500 dark:hover:border-gray-800 pr-6">
+                    <span class="inline-flex justify-center items-center ml-4">
+                      <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"></path></svg>
+                    </span>
+                    <span class="ml-2 text-sm tracking-wide truncate">Doctors Schedule</span>
+                  </a>
+                </li>
                 <li>
                   <a href="#" class="relative flex flex-row items-center h-11 focus:outline-none hover:bg-blue-800 dark:hover:bg-gray-600 text-white-600 hover:text-white-800 border-l-4 border-transparent hover:border-blue-500 dark:hover:border-gray-800 pr-6">
                     <span class="inline-flex justify-center items-center ml-4">
@@ -334,7 +338,6 @@
           </div>
           <!-- ./Sidebar -->
 
-
           <div class="h-full ml-14 mt-14 mb-10 md:ml-64">
 
 
@@ -346,272 +349,112 @@
 
             </div>
 
-<!-------This  is Joan s code---->
 
-<div class="page-content">
-
-    <div class="d-flex justify-content-between align-items-center flex-wrap grid-margin">
-      <div>
-        <h4 class="mb-3 mb-md-0">Welcome to Office Assistant Dashboard</h4>
-      </div>
-      <div class="d-flex align-items-center flex-wrap text-nowrap">
-        <div class="input-group flatpickr wd-200 me-2 mb-2 mb-md-0" id="dashboardDate">
-          <span class="input-group-text input-group-addon bg-transparent border-primary" data-toggle><i data-feather="calendar" class="text-primary"></i></span>
-          <input type="text" class="form-control bg-transparent border-primary" placeholder="Select date" data-input>
-        </div>
-        <button type="button" class="btn btn-outline-primary btn-icon-text me-2 mb-2 mb-md-0">
-          <i class="btn-icon-prepend" data-feather="printer"></i>
-          Print
-        </button>
-        <button type="button" class="btn btn-primary btn-icon-text mb-2 mb-md-0">
-          <i class="btn-icon-prepend" data-feather="download-cloud"></i>
-          Download Report
-        </button>
-      </div>
+<div class="py-8 ">  
+    <div class="text-center pb-12">
+          
+        <h1 class="font-bold text-3xl md:text-4xl lg:text-5xl font-heading text-white">
+           Meet your doctors!
+        </h1>
     </div>
-
-    <div class="row">
-      <div class="col-12 col-xl-12 stretch-card">
-        <div class="row flex-grow-1">
-          <div class="col-md-4 grid-margin stretch-card">
-            <div class="card">
-              <div class="card-body">
-                <div class="d-flex justify-content-between align-items-baseline">
-                  <h6 class="card-title mb-0">New Patients</h6>
-                  <div class="dropdown mb-2">
-                    <a type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      <i class="icon-lg text-muted pb-3px" data-feather="more-horizontal"></i>
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                      <a class="dropdown-item d-flex align-items-center" href="javascript:;"><i data-feather="eye" class="icon-sm me-2"></i> <span class="">View</span></a>
-                      <a class="dropdown-item d-flex align-items-center" href="javascript:;"><i data-feather="edit-2" class="icon-sm me-2"></i> <span class="">Edit</span></a>
-                      <a class="dropdown-item d-flex align-items-center" href="javascript:;"><i data-feather="trash" class="icon-sm me-2"></i> <span class="">Delete</span></a>
-                      <a class="dropdown-item d-flex align-items-center" href="javascript:;"><i data-feather="printer" class="icon-sm me-2"></i> <span class="">Print</span></a>
-                      <a class="dropdown-item d-flex align-items-center" href="javascript:;"><i data-feather="download" class="icon-sm me-2"></i> <span class="">Download</span></a>
-                    </div>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-6 col-md-12 col-xl-5">
-                    <h3 class="mb-2">3,897</h3>
-                    <div class="d-flex align-items-baseline">
-                      <p class="text-success">
-                        <span>+3.3%</span>
-                        <i data-feather="arrow-up" class="icon-sm mb-1"></i>
-                      </p>
-                    </div>
-                  </div>
-                  <div class="col-6 col-md-12 col-xl-7">
-                    <div id="customersChart" class="mt-md-3 mt-xl-0"></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 grid-margin stretch-card">
-            <div class="card">
-              <div class="card-body">
-                
-                <div class="row">
-                  <div class="col-6 col-md-12 col-xl-5">
-                    <h3 class="mb-2">35,084</h3>
-                    <div class="d-flex align-items-baseline">
-                      <p class="text-danger">
-                        <span>-2.8%</span>
-                        <i data-feather="arrow-down" class="icon-sm mb-1"></i>
-                      </p>
-                    </div>
-                  </div>
-                  <div class="col-6 col-md-12 col-xl-7">
-                    <div id="orderChart" class="mt-md-3 mt-xl-0"></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 grid-margin stretch-card">
-            <div class="card">
-              <div class="card-body">
-                <div class="d-flex justify-content-between align-items-baseline">
-                  <h6 class="card-title mb-0">Growth</h6>
-                  <div class="dropdown mb-2">
-                    <a type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      <i class="icon-lg text-muted pb-3px" data-feather="more-horizontal"></i>
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
-                      <a class="dropdown-item d-flex align-items-center" href="javascript:;"><i data-feather="eye" class="icon-sm me-2"></i> <span class="">View</span></a>
-                      <a class="dropdown-item d-flex align-items-center" href="javascript:;"><i data-feather="edit-2" class="icon-sm me-2"></i> <span class="">Edit</span></a>
-                      <a class="dropdown-item d-flex align-items-center" href="javascript:;"><i data-feather="trash" class="icon-sm me-2"></i> <span class="">Delete</span></a>
-                      <a class="dropdown-item d-flex align-items-center" href="javascript:;"><i data-feather="printer" class="icon-sm me-2"></i> <span class="">Print</span></a>
-                      <a class="dropdown-item d-flex align-items-center" href="javascript:;"><i data-feather="download" class="icon-sm me-2"></i> <span class="">Download</span></a>
-                    </div>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-6 col-md-12 col-xl-5">
-                    <h3 class="mb-2">70%</h3>
-                    <div class="d-flex align-items-baseline">
-                      <p class="text-success">
-                        <span>+4.8%</span>
-                        <i data-feather="arrow-up" class="icon-sm mb-1"></i>
-                      </p>
-                    </div>
-                  </div>
-                  <div class="col-6 col-md-12 col-xl-7">
-                    <div id="growthChart" class="mt-md-3 mt-xl-0"></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+    <div class=" bg-white" >
+        
+                   
+    <table>
+        <tr>
+            <td class="font-bold">Doctor</td>
+            <td class="font-bold">Department</td>
+            <td class="font-bold">Photo</td>
+            <td class="font-bold">Office</td>
+        </tr>
+        <tr>
+            <td>Doctor 1</td>
+            <td>Dentistry</td>
+            <td><img src="avatar.jpg" alt="Avatar" class="avatar"></td>
+            <td>222</td>
+        </tr>  
+        <tr>
+            <td>Doctor 1</td>
+            <td>Dentistry</td>
+            <td><img src="avatar.jpg" alt="Avatar" class="avatar"></td>
+            <td>222</td>
+        </tr> 
+        <tr>
+            <td>Doctor 1</td>
+            <td>Dentistry</td>
+            <td><img src="avatar.jpg" alt="Avatar" class="avatar"></td>
+            <td>222</td>
+        </tr> 
+        <tr>
+            <td>Doctor 1</td>
+            <td>Dentistry</td>
+            <td><img src="avatar.jpg" alt="Avatar" class="avatar"></td>
+            <td>222</td>
+        </tr> 
+        <tr>
+            <td>Doctor 1</td>
+            <td>Dentistry</td>
+            <td><img src="avatar.jpg" alt="Avatar" class="avatar"></td>
+            <td>222</td>
+        </tr> 
+        <tr>
+            <td>Doctor 1</td>
+            <td>Dentistry</td>
+            <td><img src="avatar.jpg" alt="Avatar" class="avatar"></td>
+            <td>222</td>
+        </tr> 
+        <tr>
+            <td>Doctor 1</td>
+            <td>Dentistry</td>
+            <td><img src="avatar.jpg" alt="Avatar" class="avatar"></td>
+            <td>222</td>
+        </tr> 
+        <tr>
+            <td>Doctor 1</td>
+            <td>Dentistry</td>
+            <td><img src="avatar.jpg" alt="Avatar" class="avatar"></td>
+            <td>222</td>
+        </tr> 
+        <tr>
+            <td>Doctor 1</td>
+            <td>Dentistry</td>
+            <td><img src="avatar.jpg" alt="Avatar" class="avatar"></td>
+            <td>222</td>
+        </tr> 
+        <tr>
+            <td>Doctor 1</td>
+            <td>Dentistry</td>
+            <td><img src="avatar.jpg" alt="Avatar" class="avatar"></td>
+            <td>222</td>
+        </tr> 
+        <tr>
+            <td>Doctor 1</td>
+            <td>Dentistry</td>
+            <td><img src="avatar.jpg" alt="Avatar" class="avatar"></td>
+            <td>222</td>
+        </tr> 
+        <tr>
+            <td>Doctor 1</td>
+            <td>Dentistry</td>
+            <td><img src="avatar.jpg" alt="Avatar" class="avatar"></td>
+            <td>222</td>
+        </tr> 
+        <tr>
+            <td>Doctor 1</td>
+            <td>Dentistry</td>
+            <td><img src="avatar.jpg" alt="Avatar" class="avatar"></td>
+            <td>222</td>
+        </tr> 
+        <tr>
+            <td>Doctor 1</td>
+            <td>Dentistry</td>
+            <td><img src="avatar.jpg" alt="Avatar" class="avatar"></td>
+            <td>222</td>
+        </tr>       
+    </table>
         </div>
-      </div>
-    </div> <!-- row -->
-
-    <div class="row">
-      <div class="col-12 col-xl-12 grid-margin stretch-card">
-        <div class="card overflow-hidden">
-          <div class="card-body">
-            <div class="d-flex justify-content-between align-items-baseline mb-4 mb-md-3">
-              <h6 class="card-title mb-0">PATIENT STATISTICS</h6>
-              <div class="dropdown">
-                <a type="button" id="dropdownMenuButton3" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  <i class="icon-lg text-muted pb-3px" data-feather="more-horizontal"></i>
-                </a>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton3">
-                  <a class="dropdown-item d-flex align-items-center" href="javascript:;"><i data-feather="eye" class="icon-sm me-2"></i> <span class="">View</span></a>
-                  <a class="dropdown-item d-flex align-items-center" href="javascript:;"><i data-feather="edit-2" class="icon-sm me-2"></i> <span class="">Edit</span></a>
-                  <a class="dropdown-item d-flex align-items-center" href="javascript:;"><i data-feather="trash" class="icon-sm me-2"></i> <span class="">Delete</span></a>
-                  <a class="dropdown-item d-flex align-items-center" href="javascript:;"><i data-feather="printer" class="icon-sm me-2"></i> <span class="">Print</span></a>
-                  <a class="dropdown-item d-flex align-items-center" href="javascript:;"><i data-feather="download" class="icon-sm me-2"></i> <span class="">Download</span></a>
-                </div>
-              </div>
-            </div>
-            <div class="row align-items-start">
-              <div class="col-md-7">
-                <p class="text-muted tx-13 mb-3 mb-md-0">1086 25%</p>
-              </div>
-              <div class="col-md-5 d-flex justify-content-md-end">
-                <div class="btn-group mb-3 mb-md-0" role="group" aria-label="Basic example">
-                  <button type="button" class="btn btn-outline-primary">Today</button>
-                  <button type="button" class="btn btn-outline-primary d-none d-md-block">Week</button>
-                  <button type="button" class="btn btn-primary">Month</button>
-                  <button type="button" class="btn btn-outline-primary">Year</button>
-                </div>
-              </div>
-            </div>
-            <div id="patientChart" ></div>
-          </div>
-        </div>
-      </div>
-    </div> <!-- row -->
-
-    <div class="row">
-      
-      
-    </div> <!-- row -->
-
-    <div class="row">
-      
-      <div class="col-lg-7 col-xl-8 stretch-card">
-        <div class="card">
-          <div class="card-body">
-            <div class="d-flex justify-content-between align-items-baseline mb-2">
-              <h6 class="card-title mb-0">APPOINTMENTS</h6>
-              <div class="dropdown mb-2">
-                <a type="button" id="dropdownMenuButton7" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  <i class="icon-lg text-muted pb-3px" data-feather="more-horizontal"></i>
-                </a>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton7">
-                  <a class="dropdown-item d-flex align-items-center" href="javascript:;"><i data-feather="eye" class="icon-sm me-2"></i> <span class="">View</span></a>
-                  <a class="dropdown-item d-flex align-items-center" href="javascript:;"><i data-feather="edit-2" class="icon-sm me-2"></i> <span class="">Edit</span></a>
-                  <a class="dropdown-item d-flex align-items-center" href="javascript:;"><i data-feather="trash" class="icon-sm me-2"></i> <span class="">Delete</span></a>
-                  <a class="dropdown-item d-flex align-items-center" href="javascript:;"><i data-feather="printer" class="icon-sm me-2"></i> <span class="">Print</span></a>
-                  <a class="dropdown-item d-flex align-items-center" href="javascript:;"><i data-feather="download" class="icon-sm me-2"></i> <span class="">Download</span></a>
-                </div>
-              </div>
-            </div>
-            <div class="table-responsive">
-              <table class="table table-hover mb-0">
-                <thead>
-                  <tr>
-                    <th class="pt-0">#</th>
-                    <th class="pt-0">Patient name</th>
-                    <th class="pt-0">Date for Appointment</th>
-    
-                    <th class="pt-0">Status</th>
-                    <th class="pt-0">Doctor's name</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>1</td>
-                    <td>Joan Game Kehakae</td>
-                    <td>04/11/2022</td>
-                    
-                    <td><span class="badge bg-danger">Approved</span></td>
-                    <td>Dr Bububaba</td>
-                  </tr>
-                  <tr>
-                    <td>2</td>
-                    <td>Bonang Kadimo</td>
-                    <td>02/11/2022</td>
-                    
-                    <td><span class="badge bg-success">Rejected</span></td>
-                    <td>Dr Tswai</td>
-                  </tr>
-                  <tr>
-                    <td>3</td>
-                    <td>Boago Mosidila</td>
-                    <td>02/11/2022</td>
-                    
-                    <td><span class="badge bg-info">Approved</span></td>
-                    <td>Dr Tswai</td>
-                  </tr>
-                  <tr>
-                    <td>4</td>
-                    <td>Sethunya Gabana</td>
-                    <td>05/11/2022</td>
-                    
-                    <td><span class="badge bg-warning">Approved</span>
-                    </td>
-                    <td>Dr Khan</td>
-                  </tr>
-                  <tr>
-                    <td>5</td>
-                    <td>Kabelo </td>
-                    <td>10/11/2022</td>
-                    
-                    <td><span class="badge bg-danger">Pending</span></td>
-                    <td>Dr Frank</td>
-                  </tr>
-                  <tr>
-                    <td>6</td>
-                    <td>Jeannie Kehake</td>
-                    <td>10/11/2022</td>
-                    
-                    <td><span class="badge bg-primary">Pending</span></td>
-                    <td>Dr Katy Perry</td>
-                  </tr>
-                  <tr>
-                    
-                    
-                    
-                    
-                    
-                    
-       
-                </tbody>
-              </table>
-            </div>
-          </div> 
-        </div>
-      </div>
-    </div> <!-- row -->
-
-        </div>
-
-<!---Joan s code ends here---->
+    </div>
+</div>
 
           </div>
         </div>
@@ -644,6 +487,8 @@
 
 </body>
 
+
+<!-- add footer -->
 <footer class="p-2 rounded-md shadow md:px-6 md:py-12 " style="background-color: #000435">
     <div class="sm:flex sm:items-center sm:justify-between">
         <a href="/" target="_blank" class="flex items-center mb-2 sm:mb-0">
