@@ -39,9 +39,9 @@ class AdminController extends Controller
     public function upload(Request $request){
         $doctor = new doctor;
         $doctor->name=$request->doctor_name;
-        $doctor->phone_number=$request->phone_number;
-        $doctor->patient_type=$request->patient_type;
-        $doctor->room_number=$request->room_number;
+        $doctor->email=$request->email;
+        $doctor->department=$request->department;
+        $doctor->room=$request->room;
 
         $doctor->save();
         return redirect()->back();
@@ -77,7 +77,7 @@ class AdminController extends Controller
 
         return redirect()->back();
     }
-    public function office_assistant($id){
+    public function delete_office_assistant($id){
         $data=office_assistant::find($id);
         $data->delete();
 

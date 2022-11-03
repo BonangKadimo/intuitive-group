@@ -47,7 +47,7 @@
                 <div class="flex flex-col">
                     
                     <label for="office_assistant">Name</label>
-                    <input type="text" name="office_assistant" placeholder="..." class="rounded-lg bg-gray-50 border-gray-300">
+                    <input type="text" name="name" placeholder="..." class="rounded-lg bg-gray-50 border-gray-300">
 
                     <label for="assigned_doctor">Assigned Doctor</label>
                     <input type="text" name="assigned_doctor" placeholder="..." class="rounded-lg bg-gray-50 border-gray-300">

@@ -53,15 +53,15 @@
                     <input type="text" name="phone_number" placeholder="..." class="rounded-lg bg-gray-50 border-gray-300">
 
                     <label for="patient_type">Patient Type</label>
-                    <select name="department" id="" class="rounded-lg bg-gray-50 border-gray-300">
+                    <select name="patient_type" id="" class="rounded-lg bg-gray-50 border-gray-300">
                         <option value="">---Select---</option>
                         <option value="Dentistry">Oral</option>
                         <option value="Dermatology">Dematological</option>
                         <option value="Opthalmology">Optical</option>
 
                     </select>
-                    <label for="room">Room</label>
-                    <select name="room" id="" class="rounded-lg bg-gray-50 border-gray-300">
+                    <label for="room_number">Room</label>
+                    <select name="room_number" id="" class="rounded-lg bg-gray-50 border-gray-300">
                         <option value="">---Select---</option>
                         <option value="1">One</option>
                         <option value="2">Two</option>
