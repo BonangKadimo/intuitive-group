@@ -22,6 +22,27 @@
         font-family: 'Nunito', sans-serif;
     }
 </style>
+{{-- style sa table --}}
+<style>
+    table {
+      font-family: arial, sans-serif;
+      border-collapse: collapse;
+      width: 100%;
+    }
+    
+    td, th {
+      border: 1px solid #040e1f;
+      text-align: left;
+      padding: 8px;
+    }
+    
+    tr:nth-child(even) {
+      background-color: #040e1f;
+    }
+    </style>
+ {{-- end of table style --}}
+
+
 </head>
 <!-- add nav bar -->
 <body>
